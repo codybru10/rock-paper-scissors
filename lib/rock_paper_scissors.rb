@@ -2,15 +2,15 @@ class String
   define_method(:beats?) do |move|
     player1_input = self
     if player1_input === "rock" && move === "scissors"
-      true
+      "Player 1"
     elsif player1_input === "scissors" && move === "paper"
-      true
+      "Player 1"
     elsif player1_input === "paper" && move === "rock"
-      true
+      "Player 1"
     elsif player1_input === move
-      "tie"
+      "Nobody. You Tied"
     else
-      false
+      "Player 2"
     end
     end
   end
